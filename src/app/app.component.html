@@ -3,7 +3,7 @@
 <div class="update flex-center" *ngIf="updateService.updateAvailable" @topToBottomAnimation>
     Actualización disponible
     <div class="buttons flex-center">
-        <button mat-raised-button color="warn" (click)="this.updateService.updateApp()">Despues</button>
-        <button mat-raised-button color="primary" (click)="this.updateService.cancelUpdate()">Actualizar</button>
+        <button mat-raised-button color="warn" (click)="updateApp()">Despues</button>
+        <button mat-raised-button color="primary" (click)="updateService.cancelUpdate()">Actualizar</button>
     </div>
 </div>

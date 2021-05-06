@@ -1,7 +1,7 @@
 <div class="search flex-center ns">
     <div class="search-box flex-start mat-elevation-z4">
         <mat-icon color="warn">search</mat-icon>
-        <input #txtSearch type="text" spellcheck="false" autocomplete="off" [(ngModel)]="this.listProvider.filterValue">
+        <input #txtSearch type="text" spellcheck="false" [(ngModel)]="this.listProvider.filterValue">
         <div class="actions flex-center">
             <button color="warn" mat-icon-button *ngIf="this.listProvider.filterValue &&!this.listProvider.searching"
                 (click)="clear();">
@@ -15,7 +15,7 @@
 </div>
 <div class="cocktails flex-around flex-wrap">
     <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation mat-ripple>
-        <img [src]="cocktail.photo" alt="">
+        <img [src]="cocktail.photo" alt="" crossorigin="anonymous">
         <mat-label class="name"> {{cocktail.name}} </mat-label>
     </div>
     <div class="line hide" *ngIf="listProvider.cocktais.length>4"></div>
