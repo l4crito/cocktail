@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620340304565,
+  "timestamp": 1620342103199,
   "index": "/cocktail/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/cocktail/4.77ae4699f325b985c1a1.js",
+        "/cocktail/4.f8f33363e0a42920b90f.js",
         "/cocktail/favicon.ico",
         "/cocktail/index.html",
-        "/cocktail/main.8515ac29f1746bf0f5ff.js",
+        "/cocktail/main.66fbdcb088cac1ca549f.js",
         "/cocktail/manifest.webmanifest",
         "/cocktail/polyfills.42c9398b6105c65203a1.js",
-        "/cocktail/runtime.8f815010b234adb99c7e.js",
+        "/cocktail/runtime.a683f17d1d8d0337a107.js",
         "/cocktail/styles.56df9568d3cc868243f1.css"
       ],
       "patterns": []
@@ -43,9 +43,37 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "material icons",
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 1000,
+      "maxAge": 864000000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "photos",
+      "patterns": [
+        "\\/[^/]*[^/]*\\.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+      ],
+      "strategy": "performance",
+      "maxSize": 1000,
+      "maxAge": 864000000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
-    "/cocktail/4.77ae4699f325b985c1a1.js": "2410f38f0e9177b20637de0c242ff5cafe9ecf5b",
+    "/cocktail/4.f8f33363e0a42920b90f.js": "35ff7d147ebe9dd391216027a07a34bd3d4c9b68",
     "/cocktail/assets/cocktail.png": "14ab597687b99a0cd94a1b1e8e4c510b7b60e0bf",
     "/cocktail/assets/icons/icon-128x128.png": "d1addb0ab65930b7549e2ac9ff9d1d82928ba27a",
     "/cocktail/assets/icons/icon-144x144.png": "46e83a30cfee0cebe6e1f9d172537face1a3489a",
@@ -56,11 +84,11 @@
     "/cocktail/assets/icons/icon-72x72.png": "427c80b879064f7545b8560f5a479f1af973a8a1",
     "/cocktail/assets/icons/icon-96x96.png": "0188a2fab672d707f3e7c792632f1d1694ad733f",
     "/cocktail/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/cocktail/index.html": "6c3dd0b5d20f823ea89b3f1f33231baa679ef171",
-    "/cocktail/main.8515ac29f1746bf0f5ff.js": "6e6065db916a7d725e413e65ad7bccc91c6c0e94",
+    "/cocktail/index.html": "1777341747169c190e0f7d89721e6d2751d676eb",
+    "/cocktail/main.66fbdcb088cac1ca549f.js": "d61d7896cd1f8272de20be2ef3bdbe1f8d39b25d",
     "/cocktail/manifest.webmanifest": "f79361511f5ee932b212220dd349f5af90b02172",
     "/cocktail/polyfills.42c9398b6105c65203a1.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/cocktail/runtime.8f815010b234adb99c7e.js": "7e204028b72f205a63484a6bd3308348564730d5",
+    "/cocktail/runtime.a683f17d1d8d0337a107.js": "4247072d11304d0ea9aea03d5f73c6c6971ffd14",
     "/cocktail/styles.56df9568d3cc868243f1.css": "193913604e2d177194f622f6f9d1235e66eff868"
   },
   "navigationUrls": [
