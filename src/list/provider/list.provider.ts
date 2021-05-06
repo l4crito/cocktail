@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import { ElementRef, Injectable, ViewChild } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { debounceTime, distinct, distinctUntilChanged } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { CocktailModel } from 'src/shared/models/cocktail.model';
 import { GoogleSheetService } from 'src/shared/services/google-sheet.service';
@@ -9,21 +10,34 @@ import { getItem, Names, setItem } from 'src/shared/utils/store.util';
   providedIn: 'root'
 })
 export class ListProvider {
-
+  canFilter = false;
   filterValue$ = new BehaviorSubject<string>('');
   cocktailPool: CocktailModel[] = [];
   cocktais: CocktailModel[] = [];
+  searching = false;
 
   constructor(private googleService: GoogleSheetService) {
+    this.filterValue$.
+      pipe(
+        debounceTime(700)).
+      subscribe(res => this.filterCocktails(res));
     this.getStoredCocktails();
     this.fetchCocktails();
-    this.filterValue$.subscribe(res => this.filterCocktails(res));
+    setTimeout(() => {
+      this.canFilter = true;
+    }, 2000);
   }
   get filterValue() {
     return this.filterValue$.value;
   }
   set filterValue(value: string) {
+    if (value) {
+      this.searching = true;
+    } else {
+      this.shuffleCocktails();
+    }
     this.filterValue$.next(value);
+
   }
 
   fetchCocktails() {
@@ -53,13 +67,14 @@ export class ListProvider {
         }
       });
       this.cocktailPool = cocktails;
-      if (!this.cocktailPool.length) {
+      if (!this.cocktais.length) {
         this.shuffleCocktails();
       }
       setItem(Names.COCKTAILS, this.cocktailPool);
     });
   }
   shuffleCocktails() {
+    this.searching = false;
     this.cocktais = this.cocktailPool.sort(() => 0.5 - Math.random()).slice(0, 15);
   }
   getStoredCocktails() {
@@ -69,14 +84,20 @@ export class ListProvider {
   }
 
   filterCocktails(value: string) {
-    const filter = value.trim().toLowerCase();
-    if (!filter) {
-      this.shuffleCocktails();
+    if (!this.canFilter) {
+      this.searching = false;
       return;
     }
+    if (!value) {
+      return;
+    }
+    const filter = value.trim().toLowerCase();
+
     this.cocktais = this.cocktailPool
       .filter(cocktail => cocktail.name.toLowerCase().includes(filter))
       .slice(0, 15);
-    console.log(this.cocktais)
+    this.searching = false
   }
+
+
 }
