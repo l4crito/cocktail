@@ -1,9 +1,10 @@
 {
   "name": "cocktail",
   "short_name": "cocktail",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#050505",
+  "background_color": "#050505",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "./",
   "start_url": "./",
   "icons": [

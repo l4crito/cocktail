@@ -28,6 +28,9 @@ export class ListComponent implements OnInit {
 
   }
   focusInput() {
+    if (window.innerWidth < 800) {
+      return;
+    }
     this.txtSearch.nativeElement.focus();
   }
 
