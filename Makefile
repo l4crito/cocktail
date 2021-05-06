@@ -31,5 +31,10 @@ module:
 scss:
 	sass --watch src/assets/themes/:src/assets/themes/
 
+pwa-icons: #Create an icon.png file in the root folder of your Angular project.
+	ngx-pwa-icons
+
+
+
 
 
