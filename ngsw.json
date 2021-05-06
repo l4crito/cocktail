@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1620338868688,
+  "index": "/cocktail/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/cocktail/4.430609af2366209203e8.js",
+        "/cocktail/favicon.ico",
+        "/cocktail/index.html",
+        "/cocktail/main.8515ac29f1746bf0f5ff.js",
+        "/cocktail/manifest.webmanifest",
+        "/cocktail/polyfills.42c9398b6105c65203a1.js",
+        "/cocktail/runtime.fc891bc01dca869cef1a.js",
+        "/cocktail/styles.56df9568d3cc868243f1.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/cocktail/assets/cocktail.png",
+        "/cocktail/assets/icons/icon-128x128.png",
+        "/cocktail/assets/icons/icon-144x144.png",
+        "/cocktail/assets/icons/icon-152x152.png",
+        "/cocktail/assets/icons/icon-192x192.png",
+        "/cocktail/assets/icons/icon-384x384.png",
+        "/cocktail/assets/icons/icon-512x512.png",
+        "/cocktail/assets/icons/icon-72x72.png",
+        "/cocktail/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/cocktail/4.430609af2366209203e8.js": "9059ef1c57f88f36e4639f33da47afb0c8127837",
+    "/cocktail/assets/cocktail.png": "14ab597687b99a0cd94a1b1e8e4c510b7b60e0bf",
+    "/cocktail/assets/icons/icon-128x128.png": "d1addb0ab65930b7549e2ac9ff9d1d82928ba27a",
+    "/cocktail/assets/icons/icon-144x144.png": "46e83a30cfee0cebe6e1f9d172537face1a3489a",
+    "/cocktail/assets/icons/icon-152x152.png": "b7643955db7006f6ed8cc05dece80782b4db07f6",
+    "/cocktail/assets/icons/icon-192x192.png": "5819dc2a08418e0dc84ccaa815e2da59d488557d",
+    "/cocktail/assets/icons/icon-384x384.png": "9d12198506f42302097073dfefd84a6f19396d18",
+    "/cocktail/assets/icons/icon-512x512.png": "71a7dafd0a749a8aa7a933049c03e96c33b64ff9",
+    "/cocktail/assets/icons/icon-72x72.png": "427c80b879064f7545b8560f5a479f1af973a8a1",
+    "/cocktail/assets/icons/icon-96x96.png": "0188a2fab672d707f3e7c792632f1d1694ad733f",
+    "/cocktail/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/cocktail/index.html": "e24b6455ff6c2597334251f6700dd8db4abc25bb",
+    "/cocktail/main.8515ac29f1746bf0f5ff.js": "6e6065db916a7d725e413e65ad7bccc91c6c0e94",
+    "/cocktail/manifest.webmanifest": "bbac584a3b003dce9c69eb7f95c3b2c651a3756d",
+    "/cocktail/polyfills.42c9398b6105c65203a1.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/cocktail/runtime.fc891bc01dca869cef1a.js": "8598b8091073556bee0c8ffd87d738d3a47912b2",
+    "/cocktail/styles.56df9568d3cc868243f1.css": "193913604e2d177194f622f6f9d1235e66eff868"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
