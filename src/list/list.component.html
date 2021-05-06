@@ -4,8 +4,12 @@
         <input #txtSearch type="text" spellcheck="false" [(ngModel)]="this.listProvider.filterValue">
         <div class="actions flex-center">
             <button color="warn" mat-icon-button *ngIf="this.listProvider.filterValue &&!this.listProvider.searching"
-                (click)="clear();">
+                (click)="clear()">
                 <mat-icon>cancel</mat-icon>
+            </button>
+            <button color="warn" mat-icon-button *ngIf="!this.listProvider.filterValue &&!this.listProvider.searching"
+                (click)="listProvider.shuffleCocktails()">
+                <mat-icon>shuffle</mat-icon>
             </button>
             <mat-progress-spinner color="warn" class="spinner" diameter="20" strokeWidth="2" mode="indeterminate"
                 *ngIf="this.listProvider.searching">
@@ -15,7 +19,7 @@
 </div>
 <div class="cocktails flex-around flex-wrap">
     <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation mat-ripple>
-        <img [src]="cocktail.photo" alt="" crossorigin="anonymous">
+        <img [src]="cocktail.photo" alt="">
         <mat-label class="name"> {{cocktail.name}} </mat-label>
     </div>
     <div class="line hide" *ngIf="listProvider.cocktais.length>4"></div>
