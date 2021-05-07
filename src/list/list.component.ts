@@ -1,10 +1,14 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { apearAnimation } from 'src/shared/animations';
+import { Router } from '@angular/router';
+import { apearAnimation, leftToRight, zoomIn } from 'src/shared/animations';
+import { CocktailModel } from 'src/shared/models/cocktail.model';
 import { ListProvider } from './provider/list.provider';
 
 @Component({
   animations: [
-    apearAnimation
+    apearAnimation,
+    leftToRight,
+    zoomIn
   ],
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -13,7 +17,7 @@ import { ListProvider } from './provider/list.provider';
 export class ListComponent implements OnInit {
   @ViewChild('txtSearch') txtSearch: ElementRef;
 
-  constructor(public listProvider: ListProvider) { }
+  constructor(public listProvider: ListProvider, private router: Router) { }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -32,6 +36,11 @@ export class ListComponent implements OnInit {
       return;
     }
     this.txtSearch.nativeElement.focus();
+  }
+
+  selectCocktail(cocktail: CocktailModel) {
+    this.listProvider.selectedCocktail = cocktail;
+    this.router.navigate(['/cocktail']);
   }
 
 }

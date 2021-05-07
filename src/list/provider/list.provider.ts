@@ -2,7 +2,7 @@ import { ElementRef, Injectable, ViewChild } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { debounceTime, distinct, distinctUntilChanged } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { CocktailModel } from 'src/shared/models/cocktail.model';
+import { CocktailContainer, CocktailModel } from 'src/shared/models/cocktail.model';
 import { GoogleSheetService } from 'src/shared/services/google-sheet.service';
 import { getItem, Names, setItem } from 'src/shared/utils/store.util';
 
@@ -10,11 +10,21 @@ import { getItem, Names, setItem } from 'src/shared/utils/store.util';
   providedIn: 'root'
 })
 export class ListProvider {
+  selectedCocktail: CocktailModel =
+    {
+      name: 'Americano',
+      ingredients: '3 cl de Campari* 3 cl de Vermouth Rojo* Soda al gusto',
+      decoration: 'Rodaja de naranja',
+      preparation: 'Se prepara directamente en vaso de old fashioned con hielo',
+      container: CocktailContainer.GLASS,
+      photo: 'https://lechatmagazine.com/wp-content/uploads/2021/02/americano-coctel-receta-PORTADA.jpg'
+    };
   canFilter = false;
   filterValue$ = new BehaviorSubject<string>('');
   cocktailPool: CocktailModel[] = [];
   cocktais: CocktailModel[] = [];
   searching = false;
+  shuffling = false;
 
   constructor(private googleService: GoogleSheetService) {
     this.filterValue$.
@@ -34,7 +44,7 @@ export class ListProvider {
     if (value) {
       this.searching = true;
     } else {
-      this.shuffleCocktails();
+      this.sliceCocktails();
     }
     this.filterValue$.next(value);
 
@@ -74,8 +84,16 @@ export class ListProvider {
     });
   }
   shuffleCocktails() {
+    if (this.shuffling) {
+      return;
+    }
     this.searching = false;
-    this.cocktais = this.cocktailPool.sort(() => 0.5 - Math.random()).slice(0, 15);
+    this.shuffling = true;
+    setTimeout(() => {
+      this.shuffling = false;
+      this.cocktailPool.sort(() => 0.5 - Math.random());
+      this.sliceCocktails();
+    }, 300);
   }
   getStoredCocktails() {
     const cockatails = getItem(Names.COCKTAILS);
@@ -97,6 +115,10 @@ export class ListProvider {
       .filter(cocktail => cocktail.name.toLowerCase().includes(filter))
       .slice(0, 15);
     this.searching = false
+  }
+
+  sliceCocktails() {
+    this.cocktais = this.cocktailPool.slice(0, 25);
   }
 
 

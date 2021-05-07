@@ -17,8 +17,9 @@
         </div>
     </div>
 </div>
-<div class="cocktails flex-around flex-wrap">
-    <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation mat-ripple>
+<div class="cocktails flex-around flex-wrap" *ngIf="!listProvider.shuffling" @zoomIn>
+    <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation mat-ripple
+        (click)="selectCocktail(cocktail)">
         <img [src]="cocktail.photo" alt="">
         <mat-label class="name"> {{cocktail.name}} </mat-label>
     </div>
