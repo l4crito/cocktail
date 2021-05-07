@@ -108,12 +108,18 @@ export class ListProvider {
       return;
     }
     if (!value) {
+      this.searching = false;
       return;
     }
-    const filter = value.trim().toLowerCase();
+    const filter = value.trim().split(' ');
 
     this.cocktais = this.cocktailPool
-      .filter(cocktail => cocktail.name.toLowerCase().includes(filter))
+      .filter(cocktail =>
+        this.isPresent(filter, cocktail.name) ||
+        this.isPresent(filter, cocktail.decoration) ||
+        this.isPresent(filter, cocktail.ingredients.join(' ')) ||
+        this.isPresent(filter, cocktail.preparation)
+      )
       .slice(0, 15);
     this.searching = false
   }
@@ -122,5 +128,18 @@ export class ListProvider {
     this.cocktais = this.cocktailPool.slice(0, 25);
   }
 
+  isPresent(list: string[], value: string) {
+    let exists = true;
+    value = value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    for (const item of list) {
+      if (value.includes(item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))) {
+        exists = exists && true;
+      } else {
+        exists = exists && false;
+
+      }
+    }
+    return exists;
+  }
 
 }

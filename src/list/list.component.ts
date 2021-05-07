@@ -46,7 +46,6 @@ export class ListComponent implements OnInit,AfterViewInit {
     this.listProvider.selectedCocktail = cocktail;
     this.listProvider.scrollY = window.scrollY;
     this.router.navigate(['/cocktail']);
-
   }
 
 }

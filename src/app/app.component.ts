@@ -12,6 +12,6 @@ export class AppComponent {
   title = 'cocktail';
   constructor(public updateService: UpdateService) { }
   updateApp() {
-    document.location.reload();
+    window.location.reload();
   }
 }
