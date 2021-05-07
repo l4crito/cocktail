@@ -13,7 +13,7 @@ export class ListProvider {
   selectedCocktail: CocktailModel =
     {
       name: 'Americano',
-      ingredients: '3 cl de Campari* 3 cl de Vermouth Rojo* Soda al gusto',
+      ingredients: ['3 cl de Campari', ' 3 cl de Vermouth Rojo', ' Soda al gusto'],
       decoration: 'Rodaja de naranja',
       preparation: 'Se prepara directamente en vaso de old fashioned con hielo',
       container: CocktailContainer.GLASS,
@@ -25,6 +25,7 @@ export class ListProvider {
   cocktais: CocktailModel[] = [];
   searching = false;
   shuffling = false;
+  scrollY = 0;
 
   constructor(private googleService: GoogleSheetService) {
     this.filterValue$.
@@ -69,7 +70,7 @@ export class ListProvider {
       const cocktails: CocktailModel[] = result.filter(t => t.nombre.trim()).map(t => {
         return {
           name: t.nombre?.trim(),
-          ingredients: t.ingredientes,
+          ingredients: t.ingredientes?.split('*'),
           decoration: t.decoracion,
           preparation: t.preparacion,
           container: t.sirve,

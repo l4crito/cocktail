@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { apearAnimation, leftToRight, zoomIn } from 'src/shared/animations';
 import { CocktailModel } from 'src/shared/models/cocktail.model';
@@ -14,12 +14,16 @@ import { ListProvider } from './provider/list.provider';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit {
+export class ListComponent implements OnInit,AfterViewInit {
   @ViewChild('txtSearch') txtSearch: ElementRef;
 
   constructor(public listProvider: ListProvider, private router: Router) { }
+  ngAfterViewInit(): void {
+    window.scrollTo(0, this.listProvider.scrollY);
+  }
 
   ngOnInit(): void {
+
     setTimeout(() => {
       this.focusInput();
     }, 300);
@@ -40,7 +44,9 @@ export class ListComponent implements OnInit {
 
   selectCocktail(cocktail: CocktailModel) {
     this.listProvider.selectedCocktail = cocktail;
+    this.listProvider.scrollY = window.scrollY;
     this.router.navigate(['/cocktail']);
+
   }
 
 }

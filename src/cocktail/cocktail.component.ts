@@ -12,6 +12,8 @@ export class CocktailComponent implements OnInit {
   constructor(public listProvider: ListProvider, private router: Router) { }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
+
   }
   goBack() {
     this.router.navigate(['']);

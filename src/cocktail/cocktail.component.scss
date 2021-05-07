@@ -69,19 +69,8 @@
         }
         .name {
           box-sizing: border-box;
-          background: linear-gradient(
-            to bottom,
-            transparent,
-            transparent,
-            rgba(0, 0, 0, 0.363),
-            rgba(0, 0, 0, 0.822),
-            black,
-            black
-          );
           position: absolute;
-          bottom: -1rem;
-          color: white;
-          font-weight: 600;
+          bottom: -1.5rem;
           font-size: 2rem;
           letter-spacing: 2px;
           width: 100%;
@@ -93,9 +82,30 @@
     .legend {
       box-sizing: border-box;
       width: 100vw;
-      height: 100vh;
-      overflow-y: auto;
-      padding: 10vh 5vw;
+      height: fit-content;
+      overflow-y: unset;
+      padding: 0;
+      margin-top: 4rem;
+      .title {
+        line-height: 40px;
+        color: white;
+        width: 80%;
+        border: solid 2px;
+        border-left: none;
+        text-align: center;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      .content {
+        padding: 1rem 3rem 3rem;
+        color: white;
+        font-weight: 500;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
     }
   }
 
@@ -105,4 +115,18 @@
     left: 1rem;
     z-index: 10;
   }
+}
+
+.tomato {
+  color: tomato !important;
+}
+
+.blue {
+  color: #4285f4 !important;
+}
+.purple {
+  color: #AB47BC !important;
+}
+.red {
+  color: #db4437 !important;
 }

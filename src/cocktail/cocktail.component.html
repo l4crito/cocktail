@@ -9,5 +9,19 @@
         </div>
     </div>
 
-    <div class="legend"></div>
+    <div class="legend">
+        <div class="title tomato">Ingredientes</div>
+        <div class="content">
+            <div *ngFor="let item of listProvider.selectedCocktail.ingredients"> - {{item.trim()}}</div>
+        </div>
+        <div class="title purple">Preparación</div>
+        <div class="content">
+            <div> {{listProvider.selectedCocktail.preparation}}</div>
+        </div>
+        <div class="title blue">Decoración</div>
+        <div class="content">
+            <div> {{listProvider.selectedCocktail.decoration}}</div>
+        </div>
+
+    </div>
 </div>

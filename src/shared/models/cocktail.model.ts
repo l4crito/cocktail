@@ -1,6 +1,6 @@
 export interface CocktailModel {
     name?: string;
-    ingredients?: string;
+    ingredients?: string[];
     decoration?: string;
     preparation?: string;
     container?: CocktailContainer;
