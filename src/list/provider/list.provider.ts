@@ -88,6 +88,7 @@ export class ListProvider {
     if (this.shuffling) {
       return;
     }
+    window.scrollTo(0, 0);
     this.searching = false;
     this.shuffling = true;
     setTimeout(() => {
