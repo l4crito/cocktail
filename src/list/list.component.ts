@@ -47,7 +47,7 @@ export class ListComponent implements OnInit, AfterViewInit {
     this.listProvider.selectedCocktail = cocktail;
     setTimeout(() => {
       this.router.navigate(['/cocktail']);
-    }, 400);
+    }, 300);
   }
 
 }

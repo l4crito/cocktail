@@ -62,7 +62,7 @@ export class ListProvider {
       const cocktails: CocktailModel[] = result.filter(t => t.nombre.trim()).map(t => {
         return {
           name: t.nombre?.trim(),
-          ingredients: t.ingredientes?.split('*'),
+          ingredients: t.ingredientes?.split('*').join(',').split(','),
           decoration: t.decoracion,
           preparation: t.preparacion,
           container: t.sirve,
@@ -104,7 +104,7 @@ export class ListProvider {
       this.searching = false;
       return;
     }
-    const filter = value.trim().split(' ');
+    const filter = value.trim().split(',').join(' ').split(' ');
 
     this.cocktais = this.cocktailPool
       .filter(cocktail =>
