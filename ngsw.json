@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620356774880,
+  "timestamp": 1620410372189,
   "index": "/cocktail/index.html",
   "assetGroups": [
     {
@@ -12,14 +12,14 @@
       },
       "urls": [
         "/cocktail/4.92376cb69684cb511914.js",
-        "/cocktail/5.228d6034131130091f6f.js",
+        "/cocktail/5.eebc395ae2f4bb203e01.js",
         "/cocktail/favicon.ico",
         "/cocktail/index.html",
-        "/cocktail/main.44b7bc846f514692cfea.js",
+        "/cocktail/main.909972fe28dc3e19c59d.js",
         "/cocktail/manifest.webmanifest",
         "/cocktail/polyfills.42c9398b6105c65203a1.js",
-        "/cocktail/runtime.0e1ef4a4bcbfb97ef49a.js",
-        "/cocktail/styles.c3bda0a209ee517981c0.css"
+        "/cocktail/runtime.d5e50f7f024652955f6d.js",
+        "/cocktail/styles.13035746fa951e3e1bb2.css"
       ],
       "patterns": []
     },
@@ -75,7 +75,7 @@
   ],
   "hashTable": {
     "/cocktail/4.92376cb69684cb511914.js": "6c2a718cb24e622785ecefe152de362a8f94ce26",
-    "/cocktail/5.228d6034131130091f6f.js": "1dae00172422377eaf061046f3789046287ecd4e",
+    "/cocktail/5.eebc395ae2f4bb203e01.js": "a540eba4db8e9e981a6ea1a0cd09a690931f17d8",
     "/cocktail/assets/cocktail.png": "14ab597687b99a0cd94a1b1e8e4c510b7b60e0bf",
     "/cocktail/assets/icons/icon-128x128.png": "d1addb0ab65930b7549e2ac9ff9d1d82928ba27a",
     "/cocktail/assets/icons/icon-144x144.png": "46e83a30cfee0cebe6e1f9d172537face1a3489a",
@@ -86,12 +86,12 @@
     "/cocktail/assets/icons/icon-72x72.png": "427c80b879064f7545b8560f5a479f1af973a8a1",
     "/cocktail/assets/icons/icon-96x96.png": "0188a2fab672d707f3e7c792632f1d1694ad733f",
     "/cocktail/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/cocktail/index.html": "95e9e69138be3d7625bf5a5f3d90ffa2e1a4e5cd",
-    "/cocktail/main.44b7bc846f514692cfea.js": "ceaf40d2177e90109eab13774b06bd787a34ceb9",
+    "/cocktail/index.html": "2bcf350a2e8ec7584de34a1db8990c99c54403ba",
+    "/cocktail/main.909972fe28dc3e19c59d.js": "5521da839637c48769dcd4bcfe6b150b9d7a755f",
     "/cocktail/manifest.webmanifest": "022ed0ae3b1d372de1911cdebbf10468c87499a6",
     "/cocktail/polyfills.42c9398b6105c65203a1.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/cocktail/runtime.0e1ef4a4bcbfb97ef49a.js": "b0dc7f66ee717af968a85f3bf25ae1bb6c3c1bef",
-    "/cocktail/styles.c3bda0a209ee517981c0.css": "d591bcc60c75fbd4068ac5d62b32946c41cbd842"
+    "/cocktail/runtime.d5e50f7f024652955f6d.js": "e07f99b9fc13a9d3527798cf1e798bd56df00fa1",
+    "/cocktail/styles.13035746fa951e3e1bb2.css": "440cb49b8a95262b0953633e1b77a3d4cd576f6b"
   },
   "navigationUrls": [
     {
