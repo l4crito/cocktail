@@ -17,11 +17,14 @@
         </div>
     </div>
 </div>
-<div class="cocktails flex-around flex-wrap" *ngIf="!listProvider.shuffling" >
-    <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation mat-ripple
-        (click)="selectCocktail(cocktail)">
+<div class="cocktails flex-around flex-wrap" *ngIf="!listProvider.shuffling">
+    <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation
+        (click)="selectCocktail(cocktail)" mat-ripple>
         <img [src]="cocktail.photo" alt="">
-        <mat-label class="name"> {{cocktail.name}} </mat-label>
+        <div class="description flex-start" >
+            <div class="name"> {{cocktail.name}} </div>
+            <div class="ingredients elli "> {{cocktail.ingredients.join(',')}} </div>
+        </div>
     </div>
     <div class="line hide" *ngIf="listProvider.cocktais.length>4"></div>
     <div class="line hide" *ngIf="listProvider.cocktais.length>4"></div>
