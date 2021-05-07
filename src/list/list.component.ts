@@ -19,7 +19,7 @@ export class ListComponent implements OnInit, AfterViewInit {
 
   constructor(public listProvider: ListProvider, private router: Router) { }
   ngAfterViewInit(): void {
-    window.scrollTo(0, this.listProvider.scrollY);
+    // window.scrollTo(0, this.listProvider.scrollY);
   }
 
   ngOnInit(): void {
@@ -45,7 +45,9 @@ export class ListComponent implements OnInit, AfterViewInit {
   selectCocktail(cocktail: CocktailModel) {
     this.listProvider.scrollY = window.scrollY;
     this.listProvider.selectedCocktail = cocktail;
-    this.router.navigate(['/cocktail']);
+    setTimeout(() => {
+      this.router.navigate(['/cocktail']);
+    }, 400);
   }
 
 }
