@@ -19,14 +19,15 @@ export class ListComponent implements OnInit, AfterViewInit {
 
   constructor(public listProvider: ListProvider, private router: Router) { }
   ngAfterViewInit(): void {
-    // window.scrollTo(0, this.listProvider.scrollY);
   }
 
   ngOnInit(): void {
 
     setTimeout(() => {
       this.focusInput();
-    }, 300);
+      window.scrollTo(0, this.listProvider.scrollY);
+
+    }, 50);
   }
 
   clear() {
