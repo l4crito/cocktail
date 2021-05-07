@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620411373835,
+  "timestamp": 1620411690814,
   "index": "/cocktail/index.html",
   "assetGroups": [
     {
@@ -12,13 +12,13 @@
       },
       "urls": [
         "/cocktail/4.4312981b1d947f767198.js",
-        "/cocktail/5.eebc395ae2f4bb203e01.js",
+        "/cocktail/5.cd89b158077ee871decb.js",
         "/cocktail/favicon.ico",
         "/cocktail/index.html",
         "/cocktail/main.909972fe28dc3e19c59d.js",
         "/cocktail/manifest.webmanifest",
         "/cocktail/polyfills.42c9398b6105c65203a1.js",
-        "/cocktail/runtime.9d3b070612b2c6deedef.js",
+        "/cocktail/runtime.78965abfa05d51e90572.js",
         "/cocktail/styles.13035746fa951e3e1bb2.css"
       ],
       "patterns": []
@@ -75,7 +75,7 @@
   ],
   "hashTable": {
     "/cocktail/4.4312981b1d947f767198.js": "8aa6a01c22ecd5e0b6d2c3666919a91572a92b3c",
-    "/cocktail/5.eebc395ae2f4bb203e01.js": "a540eba4db8e9e981a6ea1a0cd09a690931f17d8",
+    "/cocktail/5.cd89b158077ee871decb.js": "2a6411e72e8359385243b13c71fbeaa650ab09da",
     "/cocktail/assets/cocktail.png": "14ab597687b99a0cd94a1b1e8e4c510b7b60e0bf",
     "/cocktail/assets/icons/icon-128x128.png": "d1addb0ab65930b7549e2ac9ff9d1d82928ba27a",
     "/cocktail/assets/icons/icon-144x144.png": "46e83a30cfee0cebe6e1f9d172537face1a3489a",
@@ -86,11 +86,11 @@
     "/cocktail/assets/icons/icon-72x72.png": "427c80b879064f7545b8560f5a479f1af973a8a1",
     "/cocktail/assets/icons/icon-96x96.png": "0188a2fab672d707f3e7c792632f1d1694ad733f",
     "/cocktail/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/cocktail/index.html": "bac97b790800dfe40f1909b06291d3129a5f4e04",
+    "/cocktail/index.html": "823c35f433e0db246b23215f5917adadf8abe71f",
     "/cocktail/main.909972fe28dc3e19c59d.js": "5521da839637c48769dcd4bcfe6b150b9d7a755f",
     "/cocktail/manifest.webmanifest": "022ed0ae3b1d372de1911cdebbf10468c87499a6",
     "/cocktail/polyfills.42c9398b6105c65203a1.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/cocktail/runtime.9d3b070612b2c6deedef.js": "6b79d548fa25c2a222e4c08461445c7b91574bf7",
+    "/cocktail/runtime.78965abfa05d51e90572.js": "962b400c466ae67adb325afe652caa9d997ba0ca",
     "/cocktail/styles.13035746fa951e3e1bb2.css": "440cb49b8a95262b0953633e1b77a3d4cd576f6b"
   },
   "navigationUrls": [
