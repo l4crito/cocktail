@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620413221663,
+  "timestamp": 1620414286724,
   "index": "/cocktail/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/cocktail/4.4312981b1d947f767198.js",
-        "/cocktail/5.48d0fcf7270caeab44b8.js",
+        "/cocktail/4.931ffdc1035da4532230.js",
+        "/cocktail/5.0754515f21d2e0e4bef4.js",
         "/cocktail/favicon.ico",
         "/cocktail/index.html",
-        "/cocktail/main.1537960931845b0ab3b5.js",
+        "/cocktail/main.bd1938720c678a6a0946.js",
         "/cocktail/manifest.webmanifest",
         "/cocktail/polyfills.42c9398b6105c65203a1.js",
-        "/cocktail/runtime.0ef7bb7fe498d01c13fa.js",
+        "/cocktail/runtime.04a64dffe60191c340bb.js",
         "/cocktail/styles.13035746fa951e3e1bb2.css"
       ],
       "patterns": []
@@ -74,8 +74,8 @@
     }
   ],
   "hashTable": {
-    "/cocktail/4.4312981b1d947f767198.js": "8aa6a01c22ecd5e0b6d2c3666919a91572a92b3c",
-    "/cocktail/5.48d0fcf7270caeab44b8.js": "8b22ada4f11149f4d4a62879a7d0341d953d8145",
+    "/cocktail/4.931ffdc1035da4532230.js": "ebb4712c7657414ae8cbc4ab2549d503dd458e50",
+    "/cocktail/5.0754515f21d2e0e4bef4.js": "850cfed516133fb5e96c44636b9e42a31d3875df",
     "/cocktail/assets/cocktail.png": "14ab597687b99a0cd94a1b1e8e4c510b7b60e0bf",
     "/cocktail/assets/icons/icon-128x128.png": "d1addb0ab65930b7549e2ac9ff9d1d82928ba27a",
     "/cocktail/assets/icons/icon-144x144.png": "46e83a30cfee0cebe6e1f9d172537face1a3489a",
@@ -86,11 +86,11 @@
     "/cocktail/assets/icons/icon-72x72.png": "427c80b879064f7545b8560f5a479f1af973a8a1",
     "/cocktail/assets/icons/icon-96x96.png": "0188a2fab672d707f3e7c792632f1d1694ad733f",
     "/cocktail/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/cocktail/index.html": "afd6e3e7db537fb3c3b15af0daae89a64e791d82",
-    "/cocktail/main.1537960931845b0ab3b5.js": "9a3633b05c686b01a622c6824c281e4dae662a92",
+    "/cocktail/index.html": "1db9ffef4fb6b98b9f2841acb3ce334abb9ed0ee",
+    "/cocktail/main.bd1938720c678a6a0946.js": "a95f0f531dead008016debb5bccc5a8f16cc0c6c",
     "/cocktail/manifest.webmanifest": "022ed0ae3b1d372de1911cdebbf10468c87499a6",
     "/cocktail/polyfills.42c9398b6105c65203a1.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/cocktail/runtime.0ef7bb7fe498d01c13fa.js": "59185c4b07ccaef2eac217ed9025198ca39a9300",
+    "/cocktail/runtime.04a64dffe60191c340bb.js": "dc6f582deb0aadad7281129a93084a4ad2ea7211",
     "/cocktail/styles.13035746fa951e3e1bb2.css": "440cb49b8a95262b0953633e1b77a3d4cd576f6b"
   },
   "navigationUrls": [
