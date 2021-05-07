@@ -121,6 +121,7 @@ export class ListProvider {
         this.isPresent(filter, cocktail.preparation)
       )
       .slice(0, 15);
+    window.scrollTo(0, 0);
     this.searching = false
   }
 
