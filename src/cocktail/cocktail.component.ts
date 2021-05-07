@@ -1,5 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ListProvider } from 'src/list/provider/list.provider';
 import { leftToRight, topToBottomAnimation } from 'src/shared/animations';
 
@@ -14,14 +15,14 @@ export class CocktailComponent implements OnInit {
   name = false;
   ingridients = false;
 
-  constructor(public listProvider: ListProvider, private location: Location) { }
+  constructor(public listProvider: ListProvider, private router: Router) { }
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
     this.animateCocktail();
   }
   goBack() {
-    this.location.back();
+    this.router.navigate(['']);
   }
 
   animateCocktail() {
