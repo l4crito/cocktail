@@ -1,16 +1,16 @@
-<button mat-icon-button color="primary" class="back" (click)="goBack()">
+<button mat-icon-button color="primary" class="back tomato" (click)="goBack()">
     <mat-icon>arrow_back_ios_new</mat-icon>
 </button>
 <div class="bg flex-start ns">
     <div class="cocktail flex-center">
         <div class="photo flex-center">
-            <img [src]="listProvider.selectedCocktail.photo" alt="">
-            <div class="name">{{listProvider.selectedCocktail.name}}</div>
+            <img [src]="listProvider.selectedCocktail.photo" alt="" *ngIf="photo" @topToBottomAnimation>
+            <div class="name" *ngIf="name" @leftToRight>{{listProvider.selectedCocktail.name}}</div>
             <div class="gradient"></div>
         </div>
     </div>
 
-    <div class="legend">
+    <div class="legend" *ngIf="ingridients" @leftToRight>
         <div class="title tomato">Ingredientes</div>
         <div class="content">
             <div *ngFor="let item of listProvider.selectedCocktail.ingredients"> - {{item.trim()}}</div>
