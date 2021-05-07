@@ -14,7 +14,7 @@ import { ListProvider } from './provider/list.provider';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit,AfterViewInit {
+export class ListComponent implements OnInit, AfterViewInit {
   @ViewChild('txtSearch') txtSearch: ElementRef;
 
   constructor(public listProvider: ListProvider, private router: Router) { }
@@ -43,8 +43,8 @@ export class ListComponent implements OnInit,AfterViewInit {
   }
 
   selectCocktail(cocktail: CocktailModel) {
-    this.listProvider.selectedCocktail = cocktail;
     this.listProvider.scrollY = window.scrollY;
+    this.listProvider.selectedCocktail = cocktail;
     this.router.navigate(['/cocktail']);
   }
 

@@ -10,15 +10,7 @@ import { getItem, Names, setItem } from 'src/shared/utils/store.util';
   providedIn: 'root'
 })
 export class ListProvider {
-  selectedCocktail: CocktailModel =
-    {
-      name: 'Americano',
-      ingredients: ['3 cl de Campari', ' 3 cl de Vermouth Rojo', ' Soda al gusto'],
-      decoration: 'Rodaja de naranja',
-      preparation: 'Se prepara directamente en vaso de old fashioned con hielo',
-      container: CocktailContainer.GLASS,
-      photo: 'https://lechatmagazine.com/wp-content/uploads/2021/02/americano-coctel-receta-PORTADA.jpg'
-    };
+  selectedCocktail: CocktailModel;
   canFilter = false;
   filterValue$ = new BehaviorSubject<string>('');
   cocktailPool: CocktailModel[] = [];

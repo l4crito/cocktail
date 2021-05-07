@@ -15,17 +15,26 @@
         object-fit: cover;
         border-radius: 10px;
       }
+      .gradient {
+        z-index: 4;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(to bottom, transparent,transparent, white);
+      }
       .name {
-        background: linear-gradient(to bottom, transparent, black, black);
         position: absolute;
         bottom: -1rem;
-        color: white;
+        color: black;
         font-weight: 600;
         font-size: 3rem;
         letter-spacing: 2px;
         width: 100%;
         line-height: 3.5rem;
         padding: 5px 2rem;
+        z-index: 8;
       }
     }
   }
@@ -88,7 +97,7 @@
       margin-top: 4rem;
       .title {
         line-height: 40px;
-        color: white;
+        color: black;
         width: 80%;
         border: solid 2px;
         border-left: none;
@@ -101,7 +110,7 @@
       }
       .content {
         padding: 1rem 3rem 3rem;
-        color: white;
+        color: black;
         font-weight: 500;
         font-size: 0.8rem;
         letter-spacing: 1px;
@@ -125,7 +134,7 @@
   color: #4285f4 !important;
 }
 .purple {
-  color: #AB47BC !important;
+  color: #ab47bc !important;
 }
 .red {
   color: #db4437 !important;

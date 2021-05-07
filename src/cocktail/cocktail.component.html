@@ -1,4 +1,4 @@
-<button mat-icon-button color="warn" class="back" (click)="goBack()">
+<button mat-icon-button color="primary" class="back" (click)="goBack()">
     <mat-icon>arrow_back_ios_new</mat-icon>
 </button>
 <div class="bg flex-start ns">
@@ -6,6 +6,7 @@
         <div class="photo flex-center">
             <img [src]="listProvider.selectedCocktail.photo" alt="">
             <div class="name">{{listProvider.selectedCocktail.name}}</div>
+            <div class="gradient"></div>
         </div>
     </div>
 

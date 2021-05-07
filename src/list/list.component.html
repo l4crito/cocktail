@@ -1,5 +1,5 @@
 <div class="search flex-center ns">
-    <div class="search-box flex-start mat-elevation-z4">
+    <div class="search-box flex-start mat-elevation-z2">
         <mat-icon color="warn">search</mat-icon>
         <input #txtSearch type="text" spellcheck="false" [(ngModel)]="this.listProvider.filterValue">
         <div class="actions flex-center">
@@ -17,7 +17,7 @@
         </div>
     </div>
 </div>
-<div class="cocktails flex-around flex-wrap" *ngIf="!listProvider.shuffling" @zoomIn>
+<div class="cocktails flex-around flex-wrap" *ngIf="!listProvider.shuffling" >
     <div class="line flex-start" *ngFor="let cocktail of listProvider.cocktais" @apearAnimation mat-ripple
         (click)="selectCocktail(cocktail)">
         <img [src]="cocktail.photo" alt="">
