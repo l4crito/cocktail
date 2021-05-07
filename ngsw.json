@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620351477368,
+  "timestamp": 1620352492862,
   "index": "/cocktail/index.html",
   "assetGroups": [
     {
@@ -12,13 +12,13 @@
       },
       "urls": [
         "/cocktail/4.0a16e256603dfa92ecb4.js",
-        "/cocktail/5.f6c692a3f5b5c955414b.js",
+        "/cocktail/5.891ff53d4623a1367f48.js",
         "/cocktail/favicon.ico",
         "/cocktail/index.html",
-        "/cocktail/main.af35cfe9f785dd9232db.js",
+        "/cocktail/main.010108cfcb6857235cc5.js",
         "/cocktail/manifest.webmanifest",
         "/cocktail/polyfills.42c9398b6105c65203a1.js",
-        "/cocktail/runtime.40b2a600af2175624aee.js",
+        "/cocktail/runtime.97ae3369dc2e8152f88b.js",
         "/cocktail/styles.5de54deda3a6e5ad2aea.css"
       ],
       "patterns": []
@@ -75,7 +75,7 @@
   ],
   "hashTable": {
     "/cocktail/4.0a16e256603dfa92ecb4.js": "6b6b85c92afeab48bb75302e2f8aa66b5647bcbf",
-    "/cocktail/5.f6c692a3f5b5c955414b.js": "559ba6a3bed5d3c38ec7d8535c4aaed3d1e35ffc",
+    "/cocktail/5.891ff53d4623a1367f48.js": "a7240c738079d96eb7027e947736e130d158f9ea",
     "/cocktail/assets/cocktail.png": "14ab597687b99a0cd94a1b1e8e4c510b7b60e0bf",
     "/cocktail/assets/icons/icon-128x128.png": "d1addb0ab65930b7549e2ac9ff9d1d82928ba27a",
     "/cocktail/assets/icons/icon-144x144.png": "46e83a30cfee0cebe6e1f9d172537face1a3489a",
@@ -86,11 +86,11 @@
     "/cocktail/assets/icons/icon-72x72.png": "427c80b879064f7545b8560f5a479f1af973a8a1",
     "/cocktail/assets/icons/icon-96x96.png": "0188a2fab672d707f3e7c792632f1d1694ad733f",
     "/cocktail/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/cocktail/index.html": "036e481b44e92313e0a3a7f9c73d0d9d19c2d234",
-    "/cocktail/main.af35cfe9f785dd9232db.js": "065d298788ca58314d1c593b91994401a9bb10df",
+    "/cocktail/index.html": "465a71ee8ea729f92f52ef12b5f2f1f2c6ab0efb",
+    "/cocktail/main.010108cfcb6857235cc5.js": "45076e4ebc663bce2414db9d6a0dbecb49bcff77",
     "/cocktail/manifest.webmanifest": "f79361511f5ee932b212220dd349f5af90b02172",
     "/cocktail/polyfills.42c9398b6105c65203a1.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/cocktail/runtime.40b2a600af2175624aee.js": "461ebead2d56be33e176924345c76e7b58394cc5",
+    "/cocktail/runtime.97ae3369dc2e8152f88b.js": "19066238d12a9f6a210070f110a78da8d3afa764",
     "/cocktail/styles.5de54deda3a6e5ad2aea.css": "664f0e9e56753bfbd4a75b83982344cde0666ebb"
   },
   "navigationUrls": [
